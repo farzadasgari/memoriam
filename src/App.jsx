@@ -1,6 +1,6 @@
 function App() {
   return (
-    <h1 className="p-8 text-3xl text-sky-700 font-bold">Memoriam</h1>
+    <h1 className="p-8 font-serif text-4xl text-accent">Memoriam</h1>
   )
 }
 
