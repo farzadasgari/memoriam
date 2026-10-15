@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --paper: #f9f7f2;
+    --surface: #ffffff;
+    --ink: #1d2130;
+    --muted: #4d576b;
+    --line: #ddd7c9;
+    --accent: #1d4f78;
+    --accent-soft: #e4edf4;
+    --gold: #7a4f11;
+    --on-accent: #ffffff;
+}
