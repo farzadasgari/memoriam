@@ -25,3 +25,18 @@
   --gold: #dcb671;
   --on-accent: #0e121a;
 }
+
+@theme inline {
+    --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+    --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+    
+    --color-paper: var(--paper);
+    --color-surface: var(--surface);
+    --color-ink: var(--ink);
+    --color-muted: var(--muted);
+    --color-line: var(--line);
+    --color-accent: var(--accent);
+    --color-accent-soft: var(--accent-soft);
+    --color-gold: var(--gold);
+    --color-on-accent: var(--on-accent);
+}
