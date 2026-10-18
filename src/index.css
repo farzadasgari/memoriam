@@ -82,4 +82,21 @@
         text-transform: uppercase;
         color: var(--gold);
     }
+
+    .skip-link {
+        position: fixed;
+        left: 1rem;
+        top: -4rem;
+        z-index: 100;
+        padding: 0.6rem 1rem;
+        border-radius: 0.5rem;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-weight: 600;
+        transition: 0.2s ease;
+    }
+
+    .skip-link:focus {
+        top: 1rem;
+    }
 }
