@@ -73,3 +73,13 @@
         border-radius: 4px;
     }
 }
+
+@layer components {
+    .eyebrow {
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--gold);
+    }
+}
