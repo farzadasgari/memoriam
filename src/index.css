@@ -61,4 +61,9 @@
         -webkit-font-smoothing: antialiased;
         transition: 0.35s ease;
     }
+
+    ::selection {
+        background-color: var(--accent);
+        color: var(--on-accent);
+    }
 }
