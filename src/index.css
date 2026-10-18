@@ -52,4 +52,13 @@
             scroll-behavior: smooth;
         }
     }
+
+    body {
+        background-color: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        transition: 0.35s ease;
+    }
 }
