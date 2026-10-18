@@ -111,4 +111,15 @@
         opacity: 1;
         transform: none;
     }
+
+    @keyframes disk-spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .disk-spin {
+        animation: disk-spin 180s linear infinite;
+        transform-origin: center;
+    }
 }
