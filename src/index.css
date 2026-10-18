@@ -99,4 +99,11 @@
     .skip-link:focus {
         top: 1rem;
     }
+
+    .reveal {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: 0.7s ease;
+        transition-delay:  var(--reveal-delay, 0ms);
+    }
 }
