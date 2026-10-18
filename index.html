@@ -10,6 +10,20 @@
       content="An independent educational tribute to Maryam Mirzakhani (1977-2017), mathematician and the first woman to receive the Fields Medal."
     />
     <meta name="theme-color" content="#f9f7f2" />
+
+    <script>
+      (function () {
+        try {
+          let stored = localStorage.getItem("mm-theme");
+          let theme =
+            stored === "dark" || stored === "light"
+              ? stored
+              : window.matchMedia("(prefers-color-scheme:dark)").matches
+                ? "dark"
+                : "light";
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
