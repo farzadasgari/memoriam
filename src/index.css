@@ -106,4 +106,9 @@
         transition: 0.7s ease;
         transition-delay:  var(--reveal-delay, 0ms);
     }
+
+    .reveal[data-visible="true"] {
+        opacity: 1;
+        transform: none;
+    }
 }
