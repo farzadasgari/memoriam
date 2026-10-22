@@ -10,3 +10,10 @@ function readStoredTheme() {
         return null;
     }
 }
+
+function getInitialTheme() {
+    const stored = readStoredTheme();
+    if (stored) return stored;
+
+    return window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light";
+}
