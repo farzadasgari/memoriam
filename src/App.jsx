@@ -1,18 +1,26 @@
-import { useTheme } from "./hooks/useTheme"
+import Section from "./components/Section";
+import { useTheme } from "./hooks/useTheme";
 
 export default function App() {
-  const { theme, toggleTheme } = useTheme()
+  const { toggleTheme } = useTheme();
 
   return (
-    <div className="p-8">
+    <>
       <button
         type="button"
         onClick={toggleTheme}
-        className="rounded-full border border-line bg-surface px-5 py-2 text-ink"
+        className="m-4 rounded-full border border-line bg-surface px-5 py-2 text-ink"
       >
-        theme: {theme}
+        toggle theme
       </button>
-      <h1 className="mt-6 font-serif text-4xl text-accent">Memoriam</h1>
-    </div>
-  )
+      <Section
+        id="demo"
+        eyebrow="Demo"
+        title="Memoriam Section"
+        intro="This is the shared Section Layout."
+      >
+        <p className="text-muted">Content goes here.</p>
+      </Section>
+    </>
+  );
 }
