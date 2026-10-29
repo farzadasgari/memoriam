@@ -27,4 +27,17 @@ export default function Navbar({ theme, onToggleTheme }) {
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+
+  return (
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/85 backdrop-blur-md">
+        <nav aria-label="Primary" className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
+            <a href="#top" className="font-serif text-lg font-semibold tracking-tight text-ink hover:text-accent">
+                { person.name }
+            </a>
+
+        </nav>
+    </header>
+  )
 }
