@@ -52,14 +52,47 @@ export default function Navbar({ theme, onToggleTheme }) {
                       </a>
                     </li>
                   )
-                })
-                
-                }
+                })}
               </ul>
               <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+              <button
+                ref={menuButtonRef}
+                type="button"
+                onClick={() => setMenuOpen((open) => !open)}
+                aria-expanded={menuOpen}
+                aria-controls="mobile-menu"
+                aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-surface text-ink transition-colors hover:border-accent hover:text-accent lg:hidden"
+              >
 
+                { menuOpen ? <FiX aria-hidden='true' size={20} /> : <FiMenu aria-hidden='true' size={20} /> }
+              </button>
             </div>
         </nav>
+
+        { menuOpen && (
+          <div id="mobile-menu" className="border-t border-line bg-paper lg:hidden">
+            <ul className="mx-auto flex max-w-6xl flex-col px-5 py-3 sm:px-8">
+              { navLinks.map((link) => {
+                  const active = activeId === link.id
+                  return (
+                    <li key={link.id}>
+                      <a
+                        href={`#${link.id}`}
+                        onClick={closeMenu}
+                        aria-current={active ? 'true' : undefined}
+                        className={`block rounded-lg px-3 py-3 text-base font-medium transition-colors hover:bg-accent-soft hover:text-accent ${
+                          active ? 'text-accent' : 'text-ink'
+                        }`}
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  )
+                })}
+            </ul>
+          </div>
+        )}
     </header>
   )
 }
