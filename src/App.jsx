@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { useTheme } from "./hooks/useTheme";
 
@@ -10,7 +11,9 @@ export default function App() {
         skip to content
       </a>
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <main id="main" tabIndex={-1} className="outline-none"></main>
+      <main id="main" tabIndex={-1} className="outline-none">
+        <Hero />
+      </main>
     </>
   );
 }
