@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Achievements from "./components/Achievements";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Research from "./components/Research";
@@ -22,6 +23,7 @@ export default function App() {
         <Research />
         <Timeline />
       </main>
+      <Footer />
     </>
   );
 }
