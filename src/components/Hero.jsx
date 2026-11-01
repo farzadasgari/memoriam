@@ -22,6 +22,33 @@ export default function Hero() {
                             {person.persianName}
                         </p>
                     </Reveal>
+
+                    <Reveal delay={160}>
+                        <p className="mt-6 text-sm font-medium uppercase tracking-wider text-muted">{hero.role}</p>
+                        <p className="mt-5 max-w-xl text-lg leading-relaxed text-ink sm:text-xl">{hero.lead}</p>
+                    </Reveal>
+
+                    <Reveal delay={240}>
+                        <blockquote className="mt-8 max-w-xl border-l-2 border-gold pl-5 font-serif text-lg italic leading-relaxed text-muted">
+                            {hero.tribute}
+                        </blockquote>
+                    </Reveal>
+
+                    <Reveal delay={320} className="mt-10 flex flex-wrap gap-3">
+                        <a
+                            href="#about"
+                            className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-on-accent transition-opacity hover:opacity-90"
+                        >
+                            Explore life
+                            <FiArrowDown aria-hidden='true' />
+                        </a>
+                        <a
+                            href="#research"
+                            className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-6 py-3 text-sm font-semibold transition-colors hover:border-accent hover:text-accent"
+                        >
+                            Mathematics
+                        </a>
+                    </Reveal>
                 </div>
             </div>
         </section>
