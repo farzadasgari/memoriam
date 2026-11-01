@@ -37,6 +37,28 @@ export default function Navbar({ theme, onToggleTheme }) {
                 { person.name }
             </a>
 
+            <div className="flex items-center gap-2">
+              <ul className="hidden items-center gap-1 lg:flex">
+                { navLinks.map((link) => {
+                  const active = activeId === link.id
+                  return (
+                    <li key={link.id}>
+                      <a
+                        href={`#${link.id}`}
+                        aria-current={active ? 'true' : undefined}
+                        className={`${linkBase} ${active ? 'bg-accent-soft text-accent' : 'text-muted'}`}
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  )
+                })
+                
+                }
+              </ul>
+              <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+
+            </div>
         </nav>
     </header>
   )
