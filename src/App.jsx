@@ -1,6 +1,7 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
+import Achievements from "./components/Achievements";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 import { useTheme } from "./hooks/useTheme";
 
 export default function App() {
@@ -9,12 +10,13 @@ export default function App() {
   return (
     <>
       <a href="#main" className="skip-link">
-        skip to content
+        Skip to content
       </a>
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main id="main" tabIndex={-1} className="outline-none">
         <Hero />
         <About />
+        <Achievements />
       </main>
     </>
   );
