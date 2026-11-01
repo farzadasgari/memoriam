@@ -2,6 +2,8 @@ import About from "./components/About";
 import Achievements from "./components/Achievements";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Research from "./components/Research";
+import Timeline from "./components/Timeline";
 import { useTheme } from "./hooks/useTheme";
 
 export default function App() {
@@ -17,6 +19,8 @@ export default function App() {
         <Hero />
         <About />
         <Achievements />
+        <Research />
+        <Timeline />
       </main>
     </>
   );
