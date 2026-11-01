@@ -1,5 +1,6 @@
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
 import { useTheme } from "./hooks/useTheme";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main id="main" tabIndex={-1} className="outline-none">
         <Hero />
+        <About />
       </main>
     </>
   );
