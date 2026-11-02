@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+build/
+.prettierrc.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
