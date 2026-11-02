@@ -34,7 +34,9 @@ export default function Achievements() {
                   </span>
                   <span className="font-serif text-lg font-semibold text-gold">{item.year}</span>
                 </div>
-                <h3 className="mt-5 font-serif text-xl font-semibold leading-snug text-ink">{item.title}</h3>
+                <h3 className="mt-5 font-serif text-xl font-semibold leading-snug text-ink">
+                  {item.title}
+                </h3>
                 <p className="mt-3 flex-1 text-[0.95rem] leading-relaxed text-muted">{item.text}</p>
                 <SourceTags ids={item.sources} className="mt-5 border-t border-line pt-4" />
               </article>

@@ -31,7 +31,9 @@ export default function About() {
                     aria-hidden="true"
                     className="absolute left-[-1.78rem] top-2 h-2.5 w-2.5 rounded-full border-2 border-accent bg-paper"
                   />
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gold">{step.when}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gold">
+                    {step.when}
+                  </p>
                   <p className="mt-1 font-medium text-ink">{step.title}</p>
                   <p className="text-sm text-muted">{step.text}</p>
                 </li>

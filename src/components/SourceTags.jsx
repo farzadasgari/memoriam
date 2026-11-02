@@ -1,19 +1,15 @@
-import { referenceGroups } from "../data/content";
+import { referenceGroups } from '../data/content'
 
 const referenceById = Object.fromEntries(
-  referenceGroups
-    .flatMap((group) => group.items)
-    .map((item) => [item.id, item]),
-);
+  referenceGroups.flatMap((group) => group.items).map((item) => [item.id, item])
+)
 
-export default function SourceTags({ ids = [], className = "" }) {
-  const items = ids.map((id) => referenceById[id]).filter(Boolean);
-  if (items.length === 0) return null;
+export default function SourceTags({ ids = [], className = '' }) {
+  const items = ids.map((id) => referenceById[id]).filter(Boolean)
+  if (items.length === 0) return null
 
   return (
-    <p
-      className={`flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted ${className}`}
-    >
+    <p className={`flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted ${className}`}>
       <span className="font-semibold uppercase tracking-wider">Sources</span>
       {items.map((item) => (
         <a
@@ -26,5 +22,5 @@ export default function SourceTags({ ids = [], className = "" }) {
         </a>
       ))}
     </p>
-  );
+  )
 }

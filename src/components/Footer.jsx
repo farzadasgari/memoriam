@@ -5,13 +5,20 @@ import Reveal from './Reveal'
 
 export default function Footer() {
   return (
-    <footer id="remembrance" aria-labelledby="remembrance-title" className="relative isolate overflow-hidden border-t border-line bg-surface/60">
+    <footer
+      id="remembrance"
+      aria-labelledby="remembrance-title"
+      className="relative isolate overflow-hidden border-t border-line bg-surface/60"
+    >
       <PoincareDisk className="pointer-events-none absolute -bottom-40 -left-32 -z-10 w-[34rem] text-accent opacity-[0.12]" />
 
       <div className="mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
         <Reveal className="mx-auto max-w-2xl text-center">
           <p className="eyebrow">{memorial.heading}</p>
-          <h2 id="remembrance-title" className="mt-3 font-serif text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+          <h2
+            id="remembrance-title"
+            className="mt-3 font-serif text-4xl font-semibold tracking-tight text-ink sm:text-5xl"
+          >
             {person.name}
           </h2>
           <p className="mt-2 text-muted">
@@ -25,11 +32,15 @@ export default function Footer() {
         </Reveal>
 
         <Reveal className="mt-20">
-          <h3 className="font-serif text-2xl font-semibold text-ink">References and further reading</h3>
+          <h3 className="font-serif text-2xl font-semibold text-ink">
+            References and further reading
+          </h3>
           <div className="mt-8 grid gap-10 md:grid-cols-3">
             {referenceGroups.map((group) => (
               <div key={group.title}>
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-gold">{group.title}</h4>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-gold">
+                  {group.title}
+                </h4>
                 <ul className="mt-4 space-y-5">
                   {group.items.map((item) => (
                     <li key={item.id} id={`ref-${item.id}`} className="text-sm leading-relaxed">
@@ -56,8 +67,8 @@ export default function Footer() {
           <div className="max-w-2xl space-y-3 text-xs leading-relaxed text-muted">
             <p>{memorial.disclaimer}</p>
             <p>
-              Built with React, Vite, Tailwind CSS and React Icons. Content is original text written for this
-              page; no external images or scripts are loaded.
+              Built with React, Vite, Tailwind CSS and React Icons. Content is original text written
+              for this page; no external images or scripts are loaded.
             </p>
           </div>
           <a

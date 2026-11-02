@@ -28,7 +28,9 @@ function Topic({ topic, index }) {
           {String(index + 1).padStart(2, '0')}
         </p>
         <p className="eyebrow mt-3">{topic.kicker}</p>
-        <h3 className="mt-2 font-serif text-2xl font-semibold leading-snug text-ink sm:text-3xl">{topic.title}</h3>
+        <h3 className="mt-2 font-serif text-2xl font-semibold leading-snug text-ink sm:text-3xl">
+          {topic.title}
+        </h3>
       </div>
 
       <div className="lg:col-span-8">
@@ -43,7 +45,9 @@ function Topic({ topic, index }) {
         <aside className="mt-6 flex gap-3 rounded-xl bg-accent-soft p-5">
           <FiInfo aria-hidden="true" size={20} className="mt-0.5 shrink-0 text-accent" />
           <p className="text-[0.95rem] leading-relaxed text-ink">
-            <strong className="font-semibold text-accent">Intuition (not a formal statement): </strong>
+            <strong className="font-semibold text-accent">
+              Intuition (not a formal statement):{' '}
+            </strong>
             {topic.intuition}
           </p>
         </aside>
@@ -91,7 +95,9 @@ export default function Research() {
 
         <Reveal className="mt-10">
           <blockquote className="border-l-2 border-gold pl-5">
-            <p className="max-w-3xl font-serif text-xl italic leading-relaxed text-ink">{legacy.note.text}</p>
+            <p className="max-w-3xl font-serif text-xl italic leading-relaxed text-ink">
+              {legacy.note.text}
+            </p>
             <SourceTags ids={legacy.note.sources} className="mt-3" />
           </blockquote>
         </Reveal>

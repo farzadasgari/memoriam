@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -27,118 +27,118 @@
 }
 
 @theme inline {
-    --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
-    --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
-    
-    --color-paper: var(--paper);
-    --color-surface: var(--surface);
-    --color-ink: var(--ink);
-    --color-muted: var(--muted);
-    --color-line: var(--line);
-    --color-accent: var(--accent);
-    --color-accent-soft: var(--accent-soft);
-    --color-gold: var(--gold);
-    --color-on-accent: var(--on-accent);
+  --font-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold: var(--gold);
+  --color-on-accent: var(--on-accent);
 }
 
 @layer base {
+  html {
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
     html {
-        scroll-padding-top: 5rem;
-        -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
     }
+  }
 
-    @media (prefers-reduced-motion: no-preference) {
-        html {
-            scroll-behavior: smooth;
-        }
-    }
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.35s ease;
+  }
 
-    body {
-        background-color: var(--paper);
-        color: var(--ink);
-        font-family: var(--font-sans);
-        line-height: 1.7;
-        -webkit-font-smoothing: antialiased;
-        transition: 0.35s ease;
-    }
+  ::selection {
+    background-color: var(--accent);
+    color: var(--on-accent);
+  }
 
-    ::selection {
-        background-color: var(--accent);
-        color: var(--on-accent);
-    }
-
-    :focus-visible {
-        outline: 2px solid var(--accent);
-        outline-offset: 3px;
-        border-radius: 4px;
-    }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
 }
 
 @layer components {
-    .eyebrow {
-        font-size: 0.78rem;
-        font-weight: 600;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--gold);
-    }
+  .eyebrow {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
 
-    .skip-link {
-        position: fixed;
-        left: 1rem;
-        top: -4rem;
-        z-index: 100;
-        padding: 0.6rem 1rem;
-        border-radius: 0.5rem;
-        background: var(--accent);
-        color: var(--on-accent);
-        font-weight: 600;
-        transition: 0.2s ease;
-    }
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
 
-    .skip-link:focus {
-        top: 1rem;
-    }
+  .skip-link:focus {
+    top: 1rem;
+  }
 
-    .reveal {
-        opacity: 0;
-        transform: translateY(14px);
-        transition: 0.7s ease;
-        transition-delay:  var(--reveal-delay, 0ms);
-    }
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: 0.7s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+  }
 
-    .reveal[data-visible="true"] {
-        opacity: 1;
-        transform: none;
-    }
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
 
-    @keyframes disk-spin {
-        to {
-            transform: rotate(360deg);
-        }
+  @keyframes disk-spin {
+    to {
+      transform: rotate(360deg);
     }
+  }
 
-    .disk-spin {
-        animation: disk-spin 180s linear infinite;
-        transform-origin: center;
-    }
+  .disk-spin {
+    animation: disk-spin 180s linear infinite;
+    transform-origin: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 
-    .disk-spin {
-        animation: none;
-    }
+  .disk-spin {
+    animation: none;
+  }
 
-    *,
-    *::before,
-    *::after {
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

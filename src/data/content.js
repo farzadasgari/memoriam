@@ -88,8 +88,7 @@ export const about = {
     { label: 'Doctoral advisor', value: 'Curtis T. McMullen' },
     {
       label: 'Doctoral thesis (2004)',
-      value:
-        'Simple geodesics on hyperbolic surfaces and the volume of the moduli space of curves',
+      value: 'Simple geodesics on hyperbolic surfaces and the volume of the moduli space of curves',
     },
   ],
   factsSources: ['wikipedia', 'mactutor'],
@@ -223,21 +222,96 @@ export const legacy = {
 }
 
 export const timeline = [
-  { year: '1977', title: 'Born in Tehran', text: 'Maryam Mirzakhani is born on 12 May.', sources: ['mactutor'] },
-  { year: '1994', title: 'Olympiad gold in Hong Kong', text: 'She scores 41 of 42 points at the International Mathematical Olympiad.', sources: ['mactutor'] },
-  { year: '1995', title: 'A perfect score in Toronto', text: 'A second gold medal, with 42 of 42 points. She begins her studies at Sharif University of Technology.', sources: ['mactutor'] },
-  { year: '1999', title: 'B.Sc. from Sharif University', text: 'She graduates in mathematics and moves to the United States for graduate study at Harvard.', sources: ['mactutor'] },
-  { year: '2004', title: 'Ph.D. from Harvard', text: 'She completes her thesis on simple geodesics and moduli spaces, then begins as a Clay Research Fellow and Assistant Professor at Princeton.', sources: ['mactutor', 'imu'] },
-  { year: '2006', title: 'Collaboration with Alex Eskin begins', text: 'She begins working with Alex Eskin of the University of Chicago, a collaboration that would continue for years.', sources: ['mactutor'] },
-  { year: '2007-08', title: 'Landmark papers', text: 'Papers in the Journal of the AMS and Inventiones (2007), and in the Annals of Mathematics and IMRN (2008).', sources: ['imu', 'mactutor'] },
-  { year: '2008/09', title: 'Joins Stanford', text: 'She becomes a professor at Stanford University (sources give 2008 or 2009).', sources: ['mactutor', 'stanford'] },
-  { year: '2009', title: 'Blumenthal Award', text: 'Recognising her doctoral work in pure mathematics.', sources: ['mactutor'] },
-  { year: '2013', title: 'Satter Prize', text: 'Awarded by the American Mathematical Society. The Eskin-Mirzakhani and Eskin-Mirzakhani-Mohammadi preprints appear.', sources: ['mactutor', 'imu'] },
-  { year: '2014', title: 'Fields Medal', text: 'On 13 August in Seoul she becomes the first woman to receive the Fields Medal. She also receives a Clay Research Award.', sources: ['imu', 'mactutor'] },
-  { year: '2015-16', title: 'Elected to academies', text: 'American Philosophical Society and French Academy of Sciences (2015); US National Academy of Sciences (2016).', sources: ['mactutor'] },
-  { year: '2017', title: 'Passes away', text: 'Elected to the American Academy of Arts and Sciences in 2017. She dies on 14 July at the age of 40.', sources: ['mactutor', 'stanford'] },
-  { year: '2018', title: 'May 12 is proposed', text: 'Her birthday is proposed as a day to celebrate women in mathematics.', sources: ['may12'] },
-  { year: '2019', title: 'New Frontiers Prize announced', text: 'The Breakthrough Prize Foundation announces a prize in her name.', sources: ['wikipedia'] },
+  {
+    year: '1977',
+    title: 'Born in Tehran',
+    text: 'Maryam Mirzakhani is born on 12 May.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '1994',
+    title: 'Olympiad gold in Hong Kong',
+    text: 'She scores 41 of 42 points at the International Mathematical Olympiad.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '1995',
+    title: 'A perfect score in Toronto',
+    text: 'A second gold medal, with 42 of 42 points. She begins her studies at Sharif University of Technology.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '1999',
+    title: 'B.Sc. from Sharif University',
+    text: 'She graduates in mathematics and moves to the United States for graduate study at Harvard.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '2004',
+    title: 'Ph.D. from Harvard',
+    text: 'She completes her thesis on simple geodesics and moduli spaces, then begins as a Clay Research Fellow and Assistant Professor at Princeton.',
+    sources: ['mactutor', 'imu'],
+  },
+  {
+    year: '2006',
+    title: 'Collaboration with Alex Eskin begins',
+    text: 'She begins working with Alex Eskin of the University of Chicago, a collaboration that would continue for years.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '2007-08',
+    title: 'Landmark papers',
+    text: 'Papers in the Journal of the AMS and Inventiones (2007), and in the Annals of Mathematics and IMRN (2008).',
+    sources: ['imu', 'mactutor'],
+  },
+  {
+    year: '2008/09',
+    title: 'Joins Stanford',
+    text: 'She becomes a professor at Stanford University (sources give 2008 or 2009).',
+    sources: ['mactutor', 'stanford'],
+  },
+  {
+    year: '2009',
+    title: 'Blumenthal Award',
+    text: 'Recognising her doctoral work in pure mathematics.',
+    sources: ['mactutor'],
+  },
+  {
+    year: '2013',
+    title: 'Satter Prize',
+    text: 'Awarded by the American Mathematical Society. The Eskin-Mirzakhani and Eskin-Mirzakhani-Mohammadi preprints appear.',
+    sources: ['mactutor', 'imu'],
+  },
+  {
+    year: '2014',
+    title: 'Fields Medal',
+    text: 'On 13 August in Seoul she becomes the first woman to receive the Fields Medal. She also receives a Clay Research Award.',
+    sources: ['imu', 'mactutor'],
+  },
+  {
+    year: '2015-16',
+    title: 'Elected to academies',
+    text: 'American Philosophical Society and French Academy of Sciences (2015); US National Academy of Sciences (2016).',
+    sources: ['mactutor'],
+  },
+  {
+    year: '2017',
+    title: 'Passes away',
+    text: 'Elected to the American Academy of Arts and Sciences in 2017. She dies on 14 July at the age of 40.',
+    sources: ['mactutor', 'stanford'],
+  },
+  {
+    year: '2018',
+    title: 'May 12 is proposed',
+    text: 'Her birthday is proposed as a day to celebrate women in mathematics.',
+    sources: ['may12'],
+  },
+  {
+    year: '2019',
+    title: 'New Frontiers Prize announced',
+    text: 'The Breakthrough Prize Foundation announces a prize in her name.',
+    sources: ['wikipedia'],
+  },
 ]
 
 export const memorial = {
@@ -330,14 +404,16 @@ export const referenceGroups = [
       {
         id: 'paper-inventiones',
         short: 'Inventiones 2007',
-        title: 'Simple geodesics and Weil-Petersson volumes of moduli spaces of bordered Riemann surfaces',
+        title:
+          'Simple geodesics and Weil-Petersson volumes of moduli spaces of bordered Riemann surfaces',
         by: 'M. Mirzakhani, Inventiones Mathematicae 167 (2007)',
         url: 'https://doi.org/10.1007/s00222-006-0013-2',
       },
       {
         id: 'paper-emm',
         short: 'EMM 2015',
-        title: 'Isolation, equidistribution, and orbit closures for the SL(2,R) action on moduli space',
+        title:
+          'Isolation, equidistribution, and orbit closures for the SL(2,R) action on moduli space',
         by: 'A. Eskin, M. Mirzakhani, A. Mohammadi, Annals of Mathematics 182 (2015)',
         url: 'https://doi.org/10.4007/annals.2015.182.2.7',
       },

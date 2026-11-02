@@ -1,14 +1,14 @@
-import About from "./components/About";
-import Achievements from "./components/Achievements";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Research from "./components/Research";
-import Timeline from "./components/Timeline";
-import { useTheme } from "./hooks/useTheme";
+import About from './components/About'
+import Achievements from './components/Achievements'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
+import Navbar from './components/Navbar'
+import Research from './components/Research'
+import Timeline from './components/Timeline'
+import { useTheme } from './hooks/useTheme'
 
 export default function App() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme()
 
   return (
     <>
@@ -25,5 +25,5 @@ export default function App() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
